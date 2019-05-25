@@ -396,6 +396,15 @@ void *Sys_GetGameAPI (void *parms)
 	const char *debugdir = "debugaxp";
 #endif //NDEBUG
 
+#else
+
+    const char *gamename = "jk2gamex86.dll";
+#ifdef NDEBUG
+	const char *debugdir = "releaseaxp";
+#else
+	const char *debugdir = "debugaxp";
+#endif //NDEBUG
+
 #endif //_M__IX86
 
 	if (game_library)

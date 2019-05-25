@@ -51,7 +51,7 @@ int strcmp( const char *string1, const char *string2 ) {
 }
 
 
-char *strchr( const char *string, int c ) {
+char *strchr2( const char *string, int c ) {
 	do {
 		if ( *string == c ) {
 			return ( char * )string;

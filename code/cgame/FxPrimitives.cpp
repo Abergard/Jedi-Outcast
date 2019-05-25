@@ -7,15 +7,10 @@
 
 #include "cg_media.h"
 
-#pragma warning(disable: 4035)
-static long myftol( float f ) 
+static long myftol( float f )
 {
-	static int tmp;
-	__asm fld f
-	__asm fistp tmp
-	__asm mov eax, tmp
+	return static_cast<long>(f);
 }
-#pragma warning(default: 4035)
 
 extern int drawnFx;
 extern int mParticles;

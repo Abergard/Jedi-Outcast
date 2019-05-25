@@ -59,6 +59,8 @@ ____________________________________________________________________________*/
 #define LITTLE_ENDIAN 1
 #endif
 
+#define LITTLE_ENDIAN 1
+
 #ifndef LITTLE_ENDIAN
 #error Layer III LITTLE_ENDIAN must be defined 0 or 1
 #endif

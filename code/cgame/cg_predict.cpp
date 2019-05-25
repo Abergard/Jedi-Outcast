@@ -7,11 +7,13 @@
 
 //#include "cg_local.h"
 #include "cg_media.h"
+#include "..\game\g_local.h"
 
 static	pmove_t		cg_pmove;
 
 static	int			cg_numSolidEntities;
 static	centity_t	*cg_solidEntities[MAX_ENTITIES_IN_SNAPSHOT];
+extern level_locals_t	level;
 
 #if MEM_DEBUG
 #include "..\smartheap\heapagnt.h"
